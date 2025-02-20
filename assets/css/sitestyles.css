@@ -1,0 +1,342 @@
+/* Experience Section */
+.experience {
+    background: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .experience-item {
+    background: #fff;
+    padding: 30px;
+    border-left: 5px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* .experience-item:hover {
+    transform: translateY(-5px);
+  }
+   */
+  .experience-item h4 {
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .experience-item h5 {
+    color: #007bff;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .experience-item p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .experience-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .experience-item ul li {
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .experience-item ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .skills {
+    background: #f8f9fa;
+    /* text-align: center; */
+}
+
+/* Custom Scrollbar */
+#navbar::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+#navbar::-webkit-scrollbar-track {
+    background: #2c3e50; /* Dark background for the track */
+    border-radius: 10px;
+}
+
+#navbar::-webkit-scrollbar-thumb {
+    background: #f39c12; /* Highlight color */
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+#navbar::-webkit-scrollbar-thumb:hover {
+    background: #e67e22; /* Darker highlight on hover */
+}
+
+/* Ensure Navbar is Scrollable */
+#navbar {
+    max-height: 90vh; /* Limits the height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-right: 5px; /* Prevents content cut-off */
+}
+
+
+.contact-menu{
+    margin-bottom: 30px;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    margin: 15px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+  /* project sections */
+
+  /* Projects Section */
+  .projects {
+    /* padding: 80px 0; */
+    background: #f8f9fa;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Ensure all images have the same height and maintain aspect ratio */
+.project-card img {
+    width: 100%;
+    height: 500px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures proper fitting */
+    border-radius: 12px;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .project-card img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-card img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card img {
+        height: 280px;
+    }
+
+    .project-card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-card img {
+        height: auto;
+    }
+}
+
+/* Make images stand out with slightly varied heights */
+
+
+
+  
+  .project-card:hover img {
+    filter: blur(3px);
+    transform: scale(1.05);
+  }
+  
+ /* Project Overlay */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.88);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-overlay h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .project-overlay .card-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 90%; /* Ensures text width consistency */
+  }
+
+  /* Adjust Content for Smaller Screens */
+@media (max-width: 992px) {
+    .project-overlay {
+        padding: 10px;
+    }
+
+    .project-overlay h4 {
+        font-size: 18px;
+    }
+
+    .project-overlay .card-text {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-overlay {
+        padding: 8px;
+    }
+
+    .project-overlay h4 {
+        font-size: 16px;
+    }
+
+    .project-overlay .card-text {
+        font-size: 10px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-overlay {
+        padding: 5px;
+    }
+
+    .project-overlay h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .project-overlay .card-text {
+        font-size: 12px;
+        line-height: 1.1;
+    }
+}
+
+  
+  /* Make Role & Tech Stack stand out */
+  .project-overlay .card-text strong {
+    color: #f39c12; /* Highlight key details */
+    font-weight: 600;
+  }
+  
+  /* Project Link Styling */
+  .project-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    font-weight: 600;
+  }
+  
+  .project-link:hover {
+    background: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-overlay {
+      padding: 15px;
+    }
+    
+    .project-overlay h4 {
+      font-size: 20px;
+    }
+  
+    .project-overlay .card-text {
+      font-size: 12px;
+      width: 100%;
+    }
+  }
+  
+
+  /* Ensure overlay is visible when hovering */
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* If you want overlay to be clickable and stay visible */
+.project-card:active .project-overlay {
+    opacity: 1;
+}
+
+/* Ensures project overlay is positioned correctly */
+.project-card {
+    position: relative;
+}
+
+/* Ensures text inside overlay is readable */
+.project-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}

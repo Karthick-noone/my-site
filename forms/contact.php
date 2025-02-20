@@ -1,6 +1,6 @@
 <?php
 // Replace this email with your own email address
-$to_email = "karthick.mindtek@gmail.com";
+$to_email = "karthickpandya15@gmail.com";
 
 
 
